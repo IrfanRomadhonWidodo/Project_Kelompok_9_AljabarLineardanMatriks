@@ -16,11 +16,11 @@ Kelompok 9:
 
 Fitur
 ---
-*Operasi dasar matriks: Penjumlahan, pengurangan, perkalian.
-*Perhitungan determinan matriks.
-*Kalkulasi invers matriks.
-*Sistem persamaan linear.
-*Tampilan antarmuka web interaktif.
+* Operasi dasar matriks: Penjumlahan, pengurangan, perkalian.
+* Perhitungan determinan matriks.
+* Kalkulasi invers matriks.
+* Sistem persamaan linear.
+* Tampilan antarmuka web interaktif.
 
 Teknologi yang Digunakan
 ---
