@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrix Transpose</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../JAVASCRIPT/transposematriks.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="operasimatriks.html">Operasi Matriks</a>
+                <a href="transposematriks.html" class="active">Transpose Matriks</a>
+                <a href="determinanmatriks.html">Determinan Matriks</a>
+                <a href="inversmatriks.html">Invers Matriks</a>
+                <a href="cramerspl.html">SPL (Metode Cramer)</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Kalkulator Transpose Matriks</h2>
+        
+        <div class="matrix-input">
+            <h3>Input Matriks</h3>
+            <div class="size-controls">
+                <label>Baris: <input type="number" id="rowsInput" min="1" max="5" value="3"></label>
+                <label>Kolom: <input type="number" id="colsInput" min="1" max="5" value="3"></label>
+                <button class="btn" onclick="updateMatrixSize()">Set Size</button>
+            </div>
+            <div class="matrix-grid" id="inputMatrix"></div>
+        </div>
+        <button class="btn" onclick="calculateTranspose()">Hitung Transpose</button>
+        <button class="btn reset" onclick="resetMatrix()">Reset</button>
+        <div class="result">
+            <h3>Transpose Matriks</h3>
+            <div class="matrix-grid" id="resultMatrix"></div>
+        </div>
+        <div class="back-button-container">
+            <a href="../index.html" class="back-button">Kembali</a>
+        </div>
+    </div>
+</body>
+</html>

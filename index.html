@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrix Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .feature-grid {
+            display: grid;
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: #ffffff;
+            border: 2px solid #a78bfa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(167, 139, 250, 0.2);
+        }
+
+        .feature-card h3 {
+            color: #8b5cf6;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .feature-card p {
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .feature-link {
+            display: inline-block;
+            background-color: #8b5cf6;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .feature-link:hover {
+            background-color: #7c3aed;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 1100px;
+            margin: 2rem auto; /* Menambahkan margin atas dan bawah 3rem */
+        }
+        .intro-text {
+            text-align: center;
+            color: #4b5563;
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #7c3aed;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="nav-links">
+                <a href="index.html"class="active">Home</a>
+                <a href="HTML/operasimatriks.html">Operasi Matriks</a>
+                <a href="HTML/transposematriks.html">Transpose Matriks</a>
+                <a href="HTML/determinanmatriks.html">Determinan Matriks</a>
+                <a href="HTML/inversmatriks.html">Invers Matriks</a>
+                <a href="HTML/cramerspl.html">SPL (Metode Cramer)</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Matriks Calculator</h1>
+        <p class="intro-text">Selamat datang di Matriks Kalkulator Kelompok 9. Pilih operasi yang Anda inginkan:</p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Operasi Matriks</h3>
+                <p>Penjumlahan, pengurangan, dan perkalian matriks</p>
+                <a href="HTML/operasimatriks.html" class="feature-link">Mulai</a>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Transpose Matriks</h3>
+                <p>Menghitung transpose dari sebuah matriks</p>
+                <a href="HTML/transposematriks.html" class="feature-link">Mulai</a>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Determinan Matriks</h3>
+                <p>Menghitung nilai determinan matriks</p>
+                <a href="HTML/determinanmatriks.html" class="feature-link">Mulai</a>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Invers Matriks</h3>
+                <p>Menghitung invers dari matriks 3x3</p>
+                <a href="HTML/inversmatriks.html" class="feature-link">Mulai</a>
+            </div>
+            
+            <div class="feature-card">
+                <h3>SPL (Metode Cramer)</h3>
+                <p>Menyelesaikan Sistem Persamaan Linear dengan metode Cramer</p>
+                <a href="HTML/cramerspl.html" class="feature-link">Mulai</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

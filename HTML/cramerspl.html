@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cramer's Rule Calculator</title>
+    <script src="../JAVASCRIPT/cramerspl.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.95);;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .equations-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .equation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        input {
+            width: 60px;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        #solution {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        #solution p {
+            font-size: 1.1rem;
+            color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="operasimatriks.html">Operasi Matriks</a>
+                <a href="transposematriks.html">Transpose Matriks</a>
+                <a href="determinanmatriks.html">Determinan Matriks</a>
+                <a href="inversmatriks.html">Invers Matriks</a>
+                <a href="cramerspl.html" class="active">SPL (Metode Cramer)</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Kalkulator SPL (Metode Cramer)</h2>
+        <div class="equations-section">
+            <div class="equation">
+                <input type="number" class="coef" value="0"> x +
+                <input type="number" class="coef" value="0"> y +
+                <input type="number" class="coef" value="0"> z =
+                <input type="number" class="coef" value="0">
+            </div>
+            <div class="equation">
+                <input type="number" class="coef" value="0"> x +
+                <input type="number" class="coef" value="0"> y +
+                <input type="number" class="coef" value="0"> z =
+                <input type="number" class="coef" value="0">
+            </div>
+            <div class="equation">
+                <input type="number" class="coef" value="0"> x +
+                <input type="number" class="coef" value="0"> y +
+                <input type="number" class="coef" value="0"> z =
+                <input type="number" class="coef" value="0">
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <button class="btn" onclick="solveCramers()">Hitung</button>
+            <button class="btn reset" onclick="resetEquations()">Reset</button>
+        </div>
+        <div class="result">
+            <h3>Solusi</h3>
+            <div id="solution">
+                <p>x = <span id="x-value">0</span></p>
+                <p>y = <span id="y-value">0</span></p>
+                <p>z = <span id="z-value">0</span></p>
+            </div>
+        </div>
+        <div class="back-button-container">
+            <a href="../index.html" class="back-button">Kembali</a>
+        </div>
+    </div>
+</body>
+</html>
