@@ -24,6 +24,6 @@ Fitur
 
 Teknologi yang Digunakan
 ---
-*HTML: Membuat struktur halaman web.
-*CSS: Styling untuk antarmuka pengguna.
-*JavaScript: Logika untuk operasi matriks.
+* HTML: Membuat struktur halaman web.
+* CSS: Styling untuk antarmuka pengguna.
+* JavaScript: Logika untuk operasi matriks.
